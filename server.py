@@ -10,12 +10,12 @@ def index():
         else:
             session ['count'] = 0
         return render_template('index.html')
-    else:
-        if 'increment' in session:
-            session ['increment'] += request.form['increment']
-        else: 
-            session ['increment'] = 1
-        return render_template ('index.html')
+    # else:
+    #     if 'increment' in session:
+    #         session ['increment'] += request.form['increment']
+    #     else: 
+    #         session ['increment'] = 1
+    #     return render_template ('index.html')
     
 
 @app.route('/count2')
